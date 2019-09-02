@@ -9,6 +9,9 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import { auth } from "@/firebase";
 
+import VueChatScroll from 'vue-chat-scroll'
+Vue.use(VueChatScroll)
+
 auth.onAuthStateChanged(function(user) {
     if (user) {
         // User is signed in.

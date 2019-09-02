@@ -59,6 +59,7 @@ export default {
           { title: 'Inicio', icon: 'fas fa-address-card', to: {name:'home'} },
           { title: 'Ingreso', icon: 'fa fa-superpowers', to: {name:'ingreso'} },
           { title: 'Admin', icon: 'fas fa-archive', to: {name:'admin'} },
+          { title: 'Chat', icon: 'fas fa-archive', to: {name:'chat'} },
         ],
      }
   },
