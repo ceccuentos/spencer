@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 import { auth } from "@/firebase";
 
+import cargo from '@/views/Cargo.vue'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -42,6 +44,12 @@ const router = new Router({
             // which is lazy-loaded when the route is visited.
             component: () =>
                 import ( /* webpackChunkName: "about" */ './views/Chat.vue'),
+            meta: { requiresAuth: true }
+        },
+        {
+            path: '/cargo-',
+            name: 'cargo-',
+            component: cargo,
             meta: { requiresAuth: true }
         }
     ]

@@ -4,7 +4,7 @@
         <v-card>
 
           <v-card-text class="display-1 text-uppercase white--text 
-          text-xs-center" :class="registro ? 'success' : 'primary'">
+          text-center" :class="registro ? 'success' : 'primary'">
             <span v-if="!registro">Ingreso</span>
             <span v-if="registro">Registro</span>
 
